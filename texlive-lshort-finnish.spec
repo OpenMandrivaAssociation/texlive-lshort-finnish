@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /info/lshort/finnish
+# catalog-date 2008-12-13 17:42:32 +0100
+# catalog-license pd
+# catalog-version undef
 Name:		texlive-lshort-finnish
 Version:	20081213
 Release:	1
@@ -37,6 +43,7 @@ LaTeX2e, with added coverage of Finnish typesetting rules.
 %doc %{_texmfdistdir}/doc/latex/lshort-finnish/src/symbolit.tex
 %doc %{_texmfdistdir}/doc/latex/lshort-finnish/src/typeset.tex
 %doc %{_texmfdistdir}/doc/latex/lshort-finnish/src/viritys.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -47,3 +54,5 @@ LaTeX2e, with added coverage of Finnish typesetting rules.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}

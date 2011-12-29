@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-finnish.do
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 This is the Finnish translation of Short Introduction to
@@ -43,7 +41,6 @@ LaTeX2e, with added coverage of Finnish typesetting rules.
 %doc %{_texmfdistdir}/doc/latex/lshort-finnish/src/symbolit.tex
 %doc %{_texmfdistdir}/doc/latex/lshort-finnish/src/typeset.tex
 %doc %{_texmfdistdir}/doc/latex/lshort-finnish/src/viritys.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,5 +51,3 @@ LaTeX2e, with added coverage of Finnish typesetting rules.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}

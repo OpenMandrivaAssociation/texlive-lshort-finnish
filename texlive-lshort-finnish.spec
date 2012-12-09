@@ -51,3 +51,17 @@ LaTeX2e, with added coverage of Finnish typesetting rules.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20081213-2
++ Revision: 753469
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20081213-1
++ Revision: 718889
+- texlive-lshort-finnish
+- texlive-lshort-finnish
+- texlive-lshort-finnish
+- texlive-lshort-finnish
+

@@ -5,8 +5,8 @@
 # catalog-license pd
 # catalog-version undef
 Name:		texlive-lshort-finnish
-Version:	20081213
-Release:	10
+Version:	20170414
+Release:	1
 Summary:	Finnish introduction to LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/finnish

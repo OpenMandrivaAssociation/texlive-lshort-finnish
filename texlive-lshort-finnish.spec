@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /info/lshort/finnish
-# catalog-date 2008-12-13 17:42:32 +0100
-# catalog-license pd
-# catalog-version undef
 Name:		texlive-lshort-finnish
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	Finnish introduction to LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/lshort/finnish
 License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-finnish.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-finnish.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-finnish.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-finnish.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -44,24 +38,10 @@ LaTeX2e, with added coverage of Finnish typesetting rules.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20081213-2
-+ Revision: 753469
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20081213-1
-+ Revision: 718889
-- texlive-lshort-finnish
-- texlive-lshort-finnish
-- texlive-lshort-finnish
-- texlive-lshort-finnish
-

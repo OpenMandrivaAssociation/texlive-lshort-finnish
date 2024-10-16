@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Finnish introduction to LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/lshort/finnish
+URL:		https://www.ctan.org/tex-archive/info/lshort/finnish
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-finnish.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/lshort-finnish.doc.r%{version}.tar.xz
